@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmat Ali</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resp.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Asmat Ali</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="welcome-msg">
+                <p>Greetings! I am <span>Asmat Ali</span>, originally from the vibrant land of <span>Pakistan</span>. Currently,
+                    I find myself in the heart of <span>Saudi Arabia</span>, where I am temporarily based for
+                    professional pursuits.
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="img/logo.jpg" alt="logo">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <h3>Professional Background :</h3>
+            <p>With a career rooted in the pharmaceutical industry, I contribute my skills and expertise to a prominent
+                medicines company in Saudi Arabia. My journey in this field has been both challenging and rewarding,
+                allowing me to witness the impact of healthcare advancements firsthand.</p>
+            <h3>Passion for Progress :</h3>
+            <p>Driven by a passion for progress, I am dedicated to navigating the dynamic landscape of pharmaceuticals,
+                ensuring access to quality healthcare solutions for diverse communities.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in connecting or have a query? Feel free to drop me a message using the contact form below.
+            </p>
+
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="What's on Your Mind?"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="social-media">
+                <div class="facebook"><a href="https://web.facebook.com/asmatali7113?_rdc=1&_rdr" target="_blank"><img
+                            src="img/facebook.svg" alt="facebook"></a></div>
+                <div class="facebook"><a href="https://www.instagram.com/asmatali7113/" target="_blank"><img
+                            src="img/instagram.svg" alt="instagram"></a></div>
+                <div class="facebook"><a href="https://www.tiktok.com/@asmatali520" target="_blank"><img
+                            src="img/tiktok.svg" alt="tiktok"></a></div>
+            </div>
+
+            <div class="contact-via-call-email">
+                <h2>Contact Information</h2>
+                <p><span>Email:</span> <a href="mailto:asmat71134@gmail.com">asmat71134@gmail.com</a></p>
+                <p class="phone-no"><span>Phone No :</span>+966 591625380</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Interests/ Hobbies :</h2>
+            <h3>Beyond Work :</h3>
+            <p>Beyond my professional engagements, I find solace in delving deeper into the ever-evolving realm of
+                medicine. As a seasoned professional in the pharmaceutical industry, I am passionate about staying
+                abreast of the latest medical advancements and research. Additionally, I enjoy fostering a collaborative
+                community within the healthcare field, actively participating in industry forums and discussions. These
+                pursuits offer a balance and inspiration in the midst of a dynamic career.</p>
+        </section>
+        <section id="future-horizons">
+            <h2>Future Horizons:</h2>
+            <p>Thank you for exploring this window into my professional journey. As I continue to contribute to the
+                field of medicine, I am excited about the possibilities that lie ahead. Stay tuned for updates on my
+                professional endeavors and insights into the ever-evolving world of pharmaceuticals.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <div class="footer-social-media">
+                <div class="facebook"><a href="https://web.facebook.com/asmatali7113?_rdc=1&_rdr" target="_blank"><img
+                            src="img/facebook.svg" alt="facebook"></a></div>
+                <div class="facebook"><a href="https://www.instagram.com/asmatali7113/" target="_blank"><img
+                            src="img/instagram.svg" alt="instagram"></a></div>
+                <div class="facebook"><a href="https://www.tiktok.com/@asmatali520" target="_blank"><img
+                            src="img/tiktok.svg" alt="tiktok"></a></div>
+            </div>
+
+            <div class="email">
+                <p><span>Email :</span> <a href="mailto:asmat71134@gmail.com">asmat71134@gmail.com</a></p>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 <span>Asmat Ali</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('ul li a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
